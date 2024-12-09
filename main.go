@@ -110,7 +110,7 @@ func main() {
 	logrus.SetLevel(logrus.InfoLevel)
 
 	c := Coordinator{
-		msgs:              []string{},
+		msgs:              []string{"Hello SSE Chat!"},
 		newMsgChan:        make(chan string),
 		readClients:       make(map[string]ReadClient),
 		newReadClientChan: make(chan ReadClient),
